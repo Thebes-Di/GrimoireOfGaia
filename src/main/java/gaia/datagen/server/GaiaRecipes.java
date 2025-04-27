@@ -1,7 +1,10 @@
 package gaia.datagen.server;
 
+import gaia.GrimoireOfGaia;
+import gaia.Reference;
 import gaia.registry.GaiaRegistry;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
@@ -9,9 +12,13 @@ import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.Tags;
+import vazkii.patchouli.common.item.PatchouliDataComponents;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -81,5 +88,22 @@ public class GaiaRecipes extends RecipeProvider {
 		SimpleCookingRecipeBuilder.smelting(Ingredient.of(GaiaRegistry.FUR.get()), RecipeCategory.MISC,
 						Items.LEATHER, 0.1F, 200).unlockedBy("has_fur", has(GaiaRegistry.FUR.get()))
 				.save(consumer, "grimoireofgaia:fur_to_leather");
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, getGuideBook())
+				.requires(Items.BOOK)
+				.requires(Items.IRON_NUGGET)
+				.unlockedBy("has_book", has(Items.BOOK))
+				.unlockedBy("has_nugget", has(Items.IRON_NUGGET))
+				.save(consumer, Reference.modLoc("gaiapedia"));
+	}
+
+	public static ItemStack getGuideBook() {
+		Item guideBook = BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("patchouli", "guide_book"));
+		if (guideBook != null) {
+			ItemStack patchouliBook = new ItemStack(guideBook);
+			patchouliBook.set(PatchouliDataComponents.BOOK, Reference.modLoc("gaiapedia"));
+			return patchouliBook;
+		}
+		return ItemStack.EMPTY;
 	}
 }

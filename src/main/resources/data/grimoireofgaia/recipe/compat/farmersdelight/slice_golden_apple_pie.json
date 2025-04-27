@@ -12,12 +12,14 @@
     }
   ],
   "tool": {
-    "tag": "forge:tools/knives"
+    "tag": "c:tools/knife"
   },
   "result": [
     {
-      "item": "grimoireofgaia:golden_apple_pie_slice",
-      "count": 4
+      "item": {
+        "count": 4,
+        "id": "grimoireofgaia:golden_apple_pie_slice"
+      }
     }
   ]
 }

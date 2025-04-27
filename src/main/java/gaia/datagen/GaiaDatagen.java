@@ -23,6 +23,7 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.registries.VanillaRegistries;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.DatapackBuiltinEntriesProvider;
@@ -60,8 +61,8 @@ public class GaiaDatagen {
 			generator.addProvider(true, new GaiaBlockModels(packOutput, helper));
 			generator.addProvider(true, new GaiaItemModels(packOutput, helper));
 			generator.addProvider(true, new GaiaBlockstates(packOutput, helper));
-//			if (ModList.get().isLoaded("patchouli"))
-//				generator.addProvider(true, new gaia.datagen.client.compat.GaiaPatchouliProvider(packOutput));
+			if (ModList.get().isLoaded("patchouli"))
+				generator.addProvider(true, new gaia.datagen.client.compat.GaiaPatchouliProvider(packOutput, lookupProvider));
 		}
 	}
 
