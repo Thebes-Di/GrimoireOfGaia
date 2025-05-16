@@ -39,6 +39,8 @@ minecraft {
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
             property 'forge.enabledGameTestNamespaces', 'grimoireofgaia'
 
+            jvmArgs("-Xmx4G")
+
             mods {
                 grimoireofgaia {
                     source sourceSets.main
@@ -59,6 +61,8 @@ minecraft {
 
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
             property 'forge.enabledGameTestNamespaces', 'grimoireofgaia'
+
+            jvmArgs("-Xmx4G")
 
             mods {
                 grimoireofgaia {
@@ -83,6 +87,8 @@ minecraft {
 
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
             property 'forge.enabledGameTestNamespaces', 'grimoireofgaia'
+
+            jvmArgs("-Xmx4G")
 
             mods {
                 grimoireofgaia {
