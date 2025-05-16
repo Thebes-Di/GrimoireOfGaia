@@ -53,6 +53,11 @@ public class Dullahan extends AbstractGaiaEntity {
 		this.targetSelector.addGoal(2, this.targetPlayerGoal = new NearestAttackableTargetGoal<>(this, Player.class, true));
 	}
 
+	@Override
+	public double getMyRidingOffset() {
+		return super.getMyRidingOffset();
+	}
+
 	public static AttributeSupplier.Builder createAttributes() {
 		return Monster.createMonsterAttributes()
 				.add(Attributes.MAX_HEALTH, 40.0D)
