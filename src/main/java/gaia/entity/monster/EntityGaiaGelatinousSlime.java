@@ -50,7 +50,7 @@ public class EntityGaiaGelatinousSlime extends EntityMobHostileBase {
 		setSize(1.75F, 1.75F);
 		experienceValue = EntityAttributes.EXPERIENCE_VALUE_2;
 		stepHeight = 1.0F;
-		isImmuneToFire = true;
+		isImmuneToFire = GaiaConfig.Abilities.GelatinousSlimeImmuneToFire;
 
 		setPathPriority(PathNodeType.WATER, -1.0F);
 

@@ -137,7 +137,7 @@ public abstract class EntityMobHostileBase extends EntityMob implements IRangedA
 					}
 				}
 
-				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.INSTANT_DAMAGE, 2, 0));
+				entity.attackEntityFrom(DamageSource.MAGIC,2);
 			}
 			return true;
 		} else {

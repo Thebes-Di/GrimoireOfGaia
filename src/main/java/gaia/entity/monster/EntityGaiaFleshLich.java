@@ -46,7 +46,7 @@ public class EntityGaiaFleshLich extends EntityMobHostileBase implements IRanged
 
 		experienceValue = EntityAttributes.EXPERIENCE_VALUE_2;
 		stepHeight = 1.0F;
-		isImmuneToFire = true;
+		isImmuneToFire = GaiaConfig.Abilities.FleshLichImmuneToFire;
 
 		animationPlay = false;
 		animationTimer = 0;

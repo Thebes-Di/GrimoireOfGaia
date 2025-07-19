@@ -508,4 +508,37 @@ public class GaiaConfig {
 		@Config.Comment("Disables Gaia mobs from spawning in the specified dimension ids")
 		public int[] dimensionBlacklist = {  };
 	}
+
+	@Config.LangKey("configgui.grimoireofgaia.category.Menu8.Abilities")
+	@Config.Comment("Abilities")
+	public static final Abilities Abilities = new Abilities();
+
+	public static class Abilities {
+		@Config.LangKey("configgui.grimoireofgaia.category.Abilities.Vampire.ImmuneToFire")
+		public boolean VampireImmuneToFire = true;
+		@Config.LangKey("configgui.grimoireofgaia.category.Abilities.FleshLich.ImmuneToFire")
+		public boolean FleshLichImmuneToFire = true;
+		@Config.LangKey("configgui.grimoireofgaia.category.Abilities.Banshee.ImmuneToFire")
+		public boolean BansheeImmuneToFire = true;
+		@Config.LangKey("configgui.grimoireofgaia.category.Abilities.CobblestoneGolem.ImmuneToFire")
+		public boolean CobblestoneGolemImmuneToFire = true;
+		@Config.LangKey("configgui.grimoireofgaia.category.Abilities.GelatinousSlime.ImmuneToFire")
+		public boolean GelatinousSlimeImmuneToFire = true;
+		@Config.LangKey("configgui.grimoireofgaia.category.Abilities.Minotaur.ImmuneToFire")
+		public boolean MinotaurImmuneToFire = true;
+		@Config.LangKey("configgui.grimoireofgaia.category.Abilities.Naga.ImmuneToFire")
+		public boolean NagaImmuneToFire = true;
+		@Config.LangKey("configgui.grimoireofgaia.category.Abilities.Sphinx.ImmuneToFire")
+		public boolean SphinxImmuneToFire = true;
+		@Config.LangKey("configgui.grimoireofgaia.category.Abilities.Valkyrie.ImmuneToFire")
+		public boolean ValkyrieImmuneToFire = true;
+		@Config.LangKey("configgui.grimoireofgaia.category.Abilities.HarpyWizard.ImmuneToFire")
+		public boolean HarpyWizardImmuneToFire = true;
+		@Config.LangKey("configgui.grimoireofgaia.category.Abilities.IllagerFire.ImmuneToFire")
+		public boolean IllagerFireImmuneToFire = true;
+
+		@Config.LangKey("configgui.grimoireofgaia.category.Abilities.CobbleGolem.ImmuneToFire")
+		public boolean CobbleGolemImmuneToFire = true;
+	}
+
 }

@@ -53,7 +53,7 @@ public class EntityGaiaHarpyWizard extends EntityMobAssistBase implements IRange
 
 		experienceValue = EntityAttributes.EXPERIENCE_VALUE_1;
 		stepHeight = 1.0F;
-		isImmuneToFire = true;
+		isImmuneToFire = GaiaConfig.Abilities.HarpyWizardImmuneToFire;
 
 		animationPlay = false;
 		animationTimer = 0;

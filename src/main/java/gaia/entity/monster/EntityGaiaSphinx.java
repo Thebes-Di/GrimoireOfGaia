@@ -47,7 +47,7 @@ public class EntityGaiaSphinx extends EntityMobHostileBase {
 		setSize(1.2F, 1.8F);
 		experienceValue = EntityAttributes.EXPERIENCE_VALUE_3;
 		stepHeight = 6.0F;
-		isImmuneToFire = true;
+		isImmuneToFire = GaiaConfig.Abilities.SphinxImmuneToFire;
 
 		spawnTime = 0;
 	}

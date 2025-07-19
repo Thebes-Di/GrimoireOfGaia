@@ -68,7 +68,7 @@ public class EntityGaiaValkyrie extends EntityMobAssistDay {
 		setSize(1.0F, 2.0F);
 		experienceValue = EntityAttributes.EXPERIENCE_VALUE_3;
 		stepHeight = 1.0F;
-		isImmuneToFire = true;
+		isImmuneToFire = GaiaConfig.Abilities.ValkyrieImmuneToFire;
 
 		aggression = 0;
 		aggressive = 0;

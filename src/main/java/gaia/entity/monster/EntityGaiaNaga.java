@@ -53,7 +53,7 @@ public class EntityGaiaNaga extends EntityMobHostileDay {
 		experienceValue = EntityAttributes.EXPERIENCE_VALUE_2;
 		stepHeight = 1.0F;
 		setPathPriority(PathNodeType.WATER, 8.0F);
-		isImmuneToFire = true;
+		isImmuneToFire = GaiaConfig.Abilities.NagaImmuneToFire;
 
 		buffEffect = 0;
 		animationPlay = false;

@@ -50,7 +50,7 @@ public class EntityGaiaCobblestoneGolem extends EntityMobHostileBase {
 		setSize(1.4F, 2.2F);
 		experienceValue = EntityAttributes.EXPERIENCE_VALUE_2;
 		stepHeight = 1.0F;
-		isImmuneToFire = true;
+		isImmuneToFire = GaiaConfig.Abilities.CobblestoneGolemImmuneToFire;
 		setPathPriority(PathNodeType.WATER, -1.0F);
 	}
 

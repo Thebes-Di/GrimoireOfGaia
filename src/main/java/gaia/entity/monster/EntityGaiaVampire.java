@@ -64,7 +64,7 @@ public class EntityGaiaVampire extends EntityMobHostileBase {
 		setSize(1.0F, 2.2F);
 		experienceValue = EntityAttributes.EXPERIENCE_VALUE_3;
 		stepHeight = 6.0F;
-		isImmuneToFire = true;
+		isImmuneToFire = GaiaConfig.Abilities.VampireImmuneToFire;
 
 		spawnLimit = 0;
 		spawnTime = 0;

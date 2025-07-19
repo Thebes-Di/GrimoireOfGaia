@@ -57,7 +57,7 @@ public class EntityGaiaIllagerFire extends EntityMobHostileBase implements IRang
 		experienceValue = EntityAttributes.EXPERIENCE_VALUE_2;
 		stepHeight = 1.0F;
 		switchHealth = 0;
-		isImmuneToFire = true;
+		isImmuneToFire = GaiaConfig.Abilities.IllagerFireImmuneToFire;
 
 		animationPlay = false;
 		animationTimer = 0;

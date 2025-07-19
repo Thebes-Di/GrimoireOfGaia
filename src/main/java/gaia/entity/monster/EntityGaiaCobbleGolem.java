@@ -48,7 +48,7 @@ public class EntityGaiaCobbleGolem extends EntityMobAssistDay {
 
 		experienceValue = EntityAttributes.EXPERIENCE_VALUE_1;
 		stepHeight = 1.0F;
-		isImmuneToFire = true;
+		isImmuneToFire = GaiaConfig.Abilities.CobbleGolemImmuneToFire;
         setPathPriority(PathNodeType.WATER, -1.0F);
 	}
 

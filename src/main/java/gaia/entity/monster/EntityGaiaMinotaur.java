@@ -60,7 +60,7 @@ public class EntityGaiaMinotaur extends EntityMobHostileBase {
 		setSize(1.4F, 3.0F);
 		experienceValue = EntityAttributes.EXPERIENCE_VALUE_3;
 		stepHeight = 6.0F;
-		isImmuneToFire = true;
+		isImmuneToFire = GaiaConfig.Abilities.MinotaurImmuneToFire;
 
 		buffEffect = 0;
 		animationPlay = false;

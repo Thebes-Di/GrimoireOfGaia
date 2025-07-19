@@ -58,7 +58,7 @@ public class EntityGaiaBanshee extends EntityMobHostileBase {
 		super(worldIn);
 
 		experienceValue = EntityAttributes.EXPERIENCE_VALUE_2;
-		isImmuneToFire = true;
+		isImmuneToFire = GaiaConfig.Abilities.BansheeImmuneToFire;
 
 		this.moveHelper = new EntityGaiaBanshee.AIMoveControl(this);
 	}
